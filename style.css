@@ -318,7 +318,7 @@ nav .fa{
 /* ------------------------------css for small screen----------------- */
 @media only screen and (max-width: 600px) {
   #header {
-    background-image: url(images/mob.png);
+    background-image: url(images/mobOg.png);
   }
   .header-text {
     margin-top: 100%;
