@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -180,15 +181,25 @@ nav ul li a:hover::after {
   margin-top: 50px;
 }
 .work {
-  border-radius: 10px;
+  border-radius: 16px;
   position: relative;
   overflow: hidden;
+  background: #1d1d1d;
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  min-height: 370px;
 }
 .work img {
   width: 100%;
-  border-radius: 10px;
+  height: 100%;
+  min-height: 370px;
+  object-fit: cover;
+  border-radius: 16px;
   display: block;
-  transition: transform 0.5s;
+  transition: transform 0.5s ease;
+}
+.work:hover img {
+  transform: scale(1.04);
 }
 .layer {
   width: 100%;
@@ -203,7 +214,7 @@ nav ul li a:hover::after {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 0 40px;
+  padding: 0 25px;
   text-align: center;
   font-size: 14px;
   transition: height 0.5s;
